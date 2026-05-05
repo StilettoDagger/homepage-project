@@ -1,2 +1,9 @@
+@import url(https://fonts.bunny.net/css?family=playfair-display:400,500,600|roboto:100i,200,300,400,400i);
+
 @import "tailwindcss";
 @plugin "@iconify/tailwind4";
+
+@theme {
+	--font-roboto: "Roboto", sans-serif;
+	--font-playfair: "Playfair Display", serif;
+}

@@ -1,7 +1,7 @@
 {
-	"name": "package",
+	"name": "homepage-project",
 	"version": "1.0.0",
-	"description": "A Webpack project with Tailwind CSS and PostCSS",
+	"description": "A simple portfolio homepage built for The Odin Project.",
 	"main": "index.js",
 	"scripts": {
 		"test": "npx eslint src/ && jest",
