@@ -9,7 +9,52 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Portfolio Homepage</title>
 	</head>
-	<body>
-		<h1>Hello World</h1>
+
+	<body class="p-4 sm:p-8">
+		<div
+			aria-hidden="true"
+			class="absolute top-0 left-0 -z-10 h-full w-[2000px] origin-bottom-left -translate-y-1/2 scale-y-120 -rotate-20 bg-cyan-700">
+		</div>
+		<section
+			id="about-me"
+			class="flex flex-col p-4 sm:mx-14 sm:my-12 sm:block sm:translate-y-12">
+			<figure
+				class="relative mx-auto flex max-w-80 flex-col shadow-2xl sm:float-left sm:mr-6 sm:w-auto">
+				<img
+					class="mx-auto w-80 origin-bottom-right object-cover sm:size-75 sm:scale-130"
+					id="portrait-img"
+					alt="A stock portrait image of a man wearing a suit." />
+				<figcaption
+					class="absolute bottom-0 m-4 font-playfair text-6xl text-gray-100 text-shadow-lg sm:-top-18 sm:-right-2/3 sm:m-0">
+					John Doe
+				</figcaption>
+			</figure>
+			<article class="sm:bg-gray-100 sm:px-8 sm:pt-18 sm:pb-4 sm:shadow-xl">
+				<h2 class="my-2 text-center font-playfair text-4xl">About me</h2>
+				<p
+					>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum
+					exercitationem qui illo repudiandae. Repellendus dignissimos, veniam
+					blanditiis vel velit laboriosam deleniti, laborum maxime, veritatis
+					illo sit harum culpa distinctio praesentium! Lorem, ipsum dolor sit
+					amet consectetur adipisicing elit. Illum exercitationem qui illo
+					repudiandae. Repellendus dignissimos, veniam blanditiis vel velit
+					laboriosam deleniti, laborum maxime, veritatis illo sit harum culpa
+					distinctio praesentium!</p
+				>
+				<ul
+					class="my-4 flex justify-center gap-4 text-2xl sm:justify-end sm:text-3xl"
+					id="profile-links">
+					<li class="cursor-pointer text-black hover:text-neutral-700"
+						><i class="devicon-github-original"></i>
+					</li>
+					<li class="cursor-pointer text-black hover:text-neutral-700"
+						><i class="devicon-linkedin-plain"></i
+					></li>
+					<li class="cursor-pointer text-black hover:text-neutral-700"
+						><i class="devicon-twitter-original"></i>
+					</li>
+				</ul>
+			</article>
+		</section>
 	</body>
 </html>
