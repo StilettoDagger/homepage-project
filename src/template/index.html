@@ -13,10 +13,10 @@
 	<body>
 		<section
 			id="about-me"
-			class="flex w-full flex-col items-center p-4 sm:block sm:p-32 sm:px-14 lg:grid lg:grid-cols-4">
+			class="flex w-full flex-col items-center p-4 sm:block sm:p-32 sm:px-16 md:p-32 lg:grid lg:grid-cols-4 xl:px-28">
 			<div
 				aria-hidden="true"
-				class="absolute -z-10 h-full w-500 -translate-x-72 -translate-y-3/4 -rotate-20 bg-cyan-700 shadow-2xl sm:-translate-y-full lg:-translate-y-3/4">
+				class="absolute -z-10 h-full w-500 -translate-x-72 -translate-y-3/4 -rotate-20 bg-cyan-700 shadow-2xl sm:-translate-x-1/4 sm:-translate-y-full lg:-translate-y-2/3">
 			</div>
 			<figure
 				class="relative mx-auto flex max-w-96 justify-center shadow-2xl sm:float-left sm:mr-6 sm:w-52 sm:origin-bottom-right sm:scale-130 lg:col-span-1 lg:mr-0 lg:block lg:size-full lg:max-w-96 lg:origin-right lg:flex-col">
@@ -31,10 +31,11 @@
 			</figure>
 			<article
 				class="h-full justify-around sm:bg-gray-100 sm:px-8 sm:pt-18 sm:pb-4 sm:shadow-xl lg:col-span-3 lg:flex lg:flex-col lg:pt-2">
-				<h2 class="my-2 text-center font-playfair text-4xl lg:text-left"
+				<h2
+					class="my-2 text-center font-playfair text-4xl font-medium lg:text-left"
 					>About me</h2
 				>
-				<p
+				<p class="font-roboto text-neutral-800"
 					>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum
 					exercitationem qui illo repudiandae. Repellendus dignissimos, veniam
 					blanditiis vel velit laboriosam deleniti, laborum maxime, veritatis
@@ -45,19 +46,225 @@
 					distinctio praesentium!</p
 				>
 				<ul
-					class="my-4 flex justify-center gap-4 text-2xl sm:justify-end sm:text-3xl"
+					class="my-4 flex justify-center gap-4 text-2xl sm:justify-end"
 					id="profile-links">
 					<li class="cursor-pointer text-black hover:text-neutral-700"
-						><i class="devicon-github-original"></i>
+						><a href="#" target="_blank" aria-label="Visit my GitHub profile"
+							><i class="devicon-github-original"></i
+						></a>
 					</li>
 					<li class="cursor-pointer text-black hover:text-neutral-700"
-						><i class="devicon-linkedin-plain"></i
+						><a href="#" target="_blank" aria-label="Visit my LinkedIn profile"
+							><i class="devicon-linkedin-plain"></i></a
 					></li>
 					<li class="cursor-pointer text-black hover:text-neutral-700"
-						><i class="devicon-twitter-original"></i>
+						><a href="#" target="_blank" aria-label="Follow me on Twitter"
+							><i class="devicon-twitter-original"></i
+						></a>
 					</li>
 				</ul>
 			</article>
+		</section>
+		<section class="mt-6 p-4 md:px-12 xl:px-28" id="my-work">
+			<h2 class="mb-6 text-center font-playfair text-4xl font-medium"
+				>My Work</h2
+			>
+			<ul
+				aria-label="List of projects"
+				class="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
+				<li>
+					<article class="flex flex-col shadow-2xl">
+						<figure
+							class="flex h-80 items-center justify-center bg-indigo-500 p-8">
+							<h3 class="text-center font-playfair text-5xl text-white"
+								>screenshot of project</h3
+							>
+						</figure>
+						<div class="flex items-center px-8 py-2 text-2xl">
+							<h3 class="font-playfair font-medium">Project name</h3>
+							<ul
+								class="ml-auto flex items-center gap-4"
+								aria-label="Project links">
+								<li class="cursor-pointer hover:text-neutral-700"
+									><a href="#" target="_blank" aria-label="Link to source code"
+										><i class="devicon-github-original"></i
+									></a>
+								</li>
+								<li class="cursor-pointer hover:text-neutral-700"
+									><a href="#" target="_blank" aria-label="Open live preview">
+										<span class="icon-[mdi--open-in-new]"></span> </a
+								></li>
+							</ul>
+						</div>
+						<p class="px-4 py-2 font-roboto"
+							>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur
+							rem porro eum quae vero ad nulla iste nisi quo nesciunt suscipit
+							error, repudiandae temporibus maiores non obcaecati dicta quia
+							alias!</p
+						>
+					</article>
+				</li>
+				<li>
+					<article class="flex flex-col shadow-2xl">
+						<figure
+							class="flex h-80 items-center justify-center bg-amber-600 p-4">
+							<h3 class="text-center font-playfair text-5xl text-white"
+								>screenshot of project</h3
+							>
+						</figure>
+						<div class="flex items-center px-8 py-2 text-2xl">
+							<h3 class="font-playfair font-medium">Project name</h3>
+							<ul
+								class="ml-auto flex items-center gap-4"
+								aria-label="Project links">
+								<li class="cursor-pointer hover:text-neutral-700"
+									><a href="#" target="_blank" aria-label="Link source code"
+										><i class="devicon-github-original"></i
+									></a>
+								</li>
+								<li class="cursor-pointer hover:text-neutral-700"
+									><a href="#" target="_blank" aria-label="Open live preview">
+										<span class="icon-[mdi--open-in-new]"></span> </a
+								></li>
+							</ul>
+						</div>
+						<p class="px-4 py-2 font-roboto"
+							>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur
+							rem porro eum quae vero ad nulla iste nisi quo nesciunt suscipit
+							error, repudiandae temporibus maiores non obcaecati dicta quia
+							alias!</p
+						>
+					</article>
+				</li>
+				<li>
+					<article class="flex flex-col shadow-2xl">
+						<figure
+							class="flex h-80 items-center justify-center bg-lime-700 p-4">
+							<h3 class="text-center font-playfair text-5xl text-white"
+								>screenshot of project</h3
+							>
+						</figure>
+						<div class="flex items-center px-8 py-2 text-2xl">
+							<h3 class="font-playfair font-medium">Project name</h3>
+							<ul
+								class="ml-auto flex items-center gap-4"
+								aria-label="Project links">
+								<li class="cursor-pointer hover:text-neutral-700"
+									><a href="#" target="_blank" aria-label="Link to source code"
+										><i class="devicon-github-original"></i
+									></a>
+								</li>
+								<li class="cursor-pointer hover:text-neutral-700"
+									><a href="#" target="_blank" aria-label="Open live preview">
+										<span class="icon-[mdi--open-in-new]"></span> </a
+								></li>
+							</ul>
+						</div>
+						<p class="px-4 py-2 font-roboto"
+							>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur
+							rem porro eum quae vero ad nulla iste nisi quo nesciunt suscipit
+							error, repudiandae temporibus maiores non obcaecati dicta quia
+							alias!</p
+						>
+					</article>
+				</li>
+				<li>
+					<article class="flex flex-col shadow-2xl">
+						<figure
+							class="flex h-80 items-center justify-center bg-rose-700 p-4">
+							<h3 class="text-center font-playfair text-5xl text-white"
+								>screenshot of project</h3
+							>
+						</figure>
+						<div class="flex items-center px-8 py-2 text-2xl">
+							<h3 class="font-playfair font-medium">Project name</h3>
+							<ul
+								class="ml-auto flex items-center gap-4"
+								aria-label="Project links">
+								<li class="cursor-pointer hover:text-neutral-700"
+									><a href="#" target="_blank" aria-label="Link to source code"
+										><i class="devicon-github-original"></i
+									></a>
+								</li>
+								<li class="cursor-pointer hover:text-neutral-700"
+									><a href="#" target="_blank" aria-label="Open live preview">
+										<span class="icon-[mdi--open-in-new]"></span> </a
+								></li>
+							</ul>
+						</div>
+						<p class="px-4 py-2 font-roboto"
+							>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur
+							rem porro eum quae vero ad nulla iste nisi quo nesciunt suscipit
+							error, repudiandae temporibus maiores non obcaecati dicta quia
+							alias!</p
+						>
+					</article>
+				</li>
+				<li>
+					<article class="flex flex-col shadow-2xl">
+						<figure
+							class="flex h-80 items-center justify-center bg-cyan-700 p-4">
+							<h3 class="text-center font-playfair text-5xl text-white"
+								>screenshot of project</h3
+							>
+						</figure>
+						<div class="flex items-center px-8 py-2 text-2xl">
+							<h3 class="font-playfair font-medium">Project name</h3>
+							<ul
+								class="ml-auto flex items-center gap-4"
+								aria-label="Project links">
+								<li class="cursor-pointer hover:text-neutral-700"
+									><a href="#" target="_blank" aria-label="Link to source code"
+										><i class="devicon-github-original"></i
+									></a>
+								</li>
+								<li class="cursor-pointer hover:text-neutral-700"
+									><a href="#" target="_blank" aria-label="Open live preivew">
+										<span class="icon-[mdi--open-in-new]"></span> </a
+								></li>
+							</ul>
+						</div>
+						<p class="px-4 py-2 font-roboto"
+							>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur
+							rem porro eum quae vero ad nulla iste nisi quo nesciunt suscipit
+							error, repudiandae temporibus maiores non obcaecati dicta quia
+							alias!</p
+						>
+					</article>
+				</li>
+				<li>
+					<article class="flex flex-col shadow-2xl">
+						<figure
+							class="flex h-80 items-center justify-center bg-teal-700 p-4">
+							<h3 class="text-center font-playfair text-5xl text-white"
+								>screenshot of project</h3
+							>
+						</figure>
+						<div class="flex items-center px-8 py-2 text-2xl">
+							<h3 class="font-playfair font-medium">Project name</h3>
+							<ul
+								class="ml-auto flex items-center gap-4"
+								aria-label="Project links">
+								<li class="cursor-pointer hover:text-neutral-700"
+									><a href="#" target="_blank" aria-label="Link to source code"
+										><i class="devicon-github-original"></i
+									></a>
+								</li>
+								<li class="cursor-pointer hover:text-neutral-700"
+									><a href="#" target="_blank" aria-label="Open live preview">
+										<span class="icon-[mdi--open-in-new]"></span> </a
+								></li>
+							</ul>
+						</div>
+						<p class="px-4 py-2 font-roboto"
+							>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur
+							rem porro eum quae vero ad nulla iste nisi quo nesciunt suscipit
+							error, repudiandae temporibus maiores non obcaecati dicta quia
+							alias!</p
+						>
+					</article>
+				</li>
+			</ul>
 		</section>
 	</body>
 </html>
