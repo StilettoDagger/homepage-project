@@ -9,59 +9,65 @@
 	<body class="overflow-x-hidden">
 		<section
 			id="about-me"
-			class="flex w-full flex-col items-center p-4 sm:block sm:p-32 sm:px-16 md:p-32 lg:grid lg:grid-cols-4 xl:px-28">
+			class="relative flex min-h-screen w-full flex-col items-center justify-center p-4 sm:px-16 md:px-32 xl:px-28">
 			<div
 				aria-hidden="true"
-				class="absolute -z-10 h-full w-500 -translate-x-72 -translate-y-3/4 -rotate-20 bg-cyan-700 shadow-2xl sm:-translate-x-1/4 sm:-translate-y-full lg:-translate-y-2/3">
+				class="absolute top-0 left-1/2 -z-10 h-full w-[400vw] -translate-x-1/2 -translate-y-3/4 -rotate-20 bg-cyan-700 shadow-2xl sm:-translate-y-2/3 lg:-translate-y-1/2">
 			</div>
-			<figure
-				class="relative mx-auto flex max-w-96 justify-center shadow-2xl sm:float-left sm:mr-6 sm:w-52 sm:origin-bottom-right sm:scale-130 lg:col-span-1 lg:mr-0 lg:block lg:size-full lg:max-w-96 lg:origin-right lg:flex-col">
-				<img
-					class="mx-auto aspect-square h-full object-cover"
-					id="portrait-img"
-					alt="A stock portrait image of a man wearing a suit." />
-				<figcaption
-					class="absolute bottom-0 m-4 font-playfair text-6xl text-gray-100 text-shadow-lg sm:-top-2 sm:-right-1/2 sm:bottom-auto sm:text-3xl lg:top-auto lg:right-0 lg:bottom-0 lg:text-5xl">
-					John Doe
-				</figcaption>
-			</figure>
-			<article
-				class="h-full justify-around sm:bg-gray-100 sm:px-8 sm:pt-18 sm:pb-4 sm:shadow-xl lg:col-span-3 lg:flex lg:flex-col lg:pt-2">
-				<h2
-					class="my-2 text-center font-playfair text-4xl font-medium lg:text-left lg:text-5xl"
-					>About me</h2
-				>
-				<p class="font-roboto text-neutral-800 lg:text-xl"
-					>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum
-					exercitationem qui illo repudiandae. Repellendus dignissimos, veniam
-					blanditiis vel velit laboriosam deleniti, laborum maxime, veritatis
-					illo sit harum culpa distinctio praesentium! Lorem, ipsum dolor sit
-					amet consectetur adipisicing elit. Illum exercitationem qui illo
-					repudiandae. Repellendus dignissimos, veniam blanditiis vel velit
-					laboriosam deleniti, laborum maxime, veritatis illo sit harum culpa
-					distinctio praesentium!</p
-				>
-				<ul
-					class="my-4 flex justify-center gap-4 text-3xl sm:justify-end md:text-4xl"
-					id="profile-links">
-					<li class="cursor-pointer text-black hover:text-neutral-700"
-						><a href="#" target="_blank" aria-label="Visit my GitHub profile">
-							<span class="icon-[mdi--github]"></span>
-						</a>
-					</li>
-					<li class="cursor-pointer text-black hover:text-neutral-700"
-						><a href="#" target="_blank" aria-label="Visit my LinkedIn profile">
-							<span class="icon-[mdi--linkedin]"></span> </a
-					></li>
-					<li class="cursor-pointer text-black hover:text-neutral-700"
-						><a href="#" target="_blank" aria-label="Follow me on Twitter">
-							<span class="icon-[mdi--twitter]"></span>
-						</a>
-					</li>
-				</ul>
-			</article>
+			<div
+				class="flex w-full flex-col items-center sm:block lg:grid lg:grid-cols-4">
+				<figure
+					class="relative mx-auto flex max-w-96 justify-center shadow-2xl sm:float-left sm:mr-6 sm:w-52 sm:origin-bottom-right sm:scale-130 lg:col-span-1 lg:mr-0 lg:block lg:size-full lg:max-w-96 lg:origin-right lg:flex-col">
+					<img
+						class="mx-auto aspect-square h-full object-cover"
+						id="portrait-img"
+						alt="A stock portrait image of a man wearing a suit." />
+					<figcaption
+						class="absolute bottom-0 m-4 font-playfair text-6xl text-gray-100 text-shadow-lg sm:-top-2 sm:-right-1/2 sm:bottom-auto sm:text-3xl lg:top-auto lg:right-0 lg:bottom-0 lg:text-5xl">
+						John Doe
+					</figcaption>
+				</figure>
+				<article
+					class="justify-around sm:bg-gray-100 sm:px-8 sm:pt-18 sm:pb-4 sm:shadow-xl lg:col-span-3 lg:flex lg:flex-col lg:pt-2">
+					<h2
+						class="my-2 text-center font-playfair text-4xl font-medium lg:text-left lg:text-5xl"
+						>About me</h2
+					>
+					<p class="font-roboto text-neutral-800 lg:text-xl"
+						>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum
+						exercitationem qui illo repudiandae. Repellendus dignissimos, veniam
+						blanditiis vel velit laboriosam deleniti, laborum maxime, veritatis
+						illo sit harum culpa distinctio praesentium! Lorem, ipsum dolor sit
+						amet consectetur adipisicing elit. Illum exercitationem qui illo
+						repudiandae. Repellendus dignissimos, veniam blanditiis vel velit
+						laboriosam deleniti, laborum maxime, veritatis illo sit harum culpa
+						distinctio praesentium!</p
+					>
+					<ul
+						class="my-4 flex justify-center gap-4 text-3xl sm:justify-end md:text-4xl"
+						id="profile-links">
+						<li class="cursor-pointer text-black hover:text-neutral-700"
+							><a href="#" target="_blank" aria-label="Visit my GitHub profile">
+								<span class="icon-[mdi--github]"></span>
+							</a>
+						</li>
+						<li class="cursor-pointer text-black hover:text-neutral-700"
+							><a
+								href="#"
+								target="_blank"
+								aria-label="Visit my LinkedIn profile">
+								<span class="icon-[mdi--linkedin]"></span> </a
+						></li>
+						<li class="cursor-pointer text-black hover:text-neutral-700"
+							><a href="#" target="_blank" aria-label="Follow me on Twitter">
+								<span class="icon-[mdi--twitter]"></span>
+							</a>
+						</li>
+					</ul>
+				</article>
+			</div>
 		</section>
-		<section class="mt-6 p-4 md:px-12 xl:px-28" id="my-work">
+		<section class="p-4 md:px-12 xl:px-28" id="my-work">
 			<h2
 				class="mb-6 text-center font-playfair text-4xl font-medium lg:text-5xl"
 				>My Work</h2
