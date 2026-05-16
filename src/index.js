@@ -1,5 +1,5 @@
 import "./css/styles.css";
-import portraitImg from "../assets/images/professional-portrait.jpg";
+import portraitImg from "../assets/images/portrait.jpeg";
 import contactImg from "../assets/images/contact.jpg";
 import battleshipImg from "../assets/images/battleship.png";
 import calculatorImg from "../assets/images/calculator.png";
