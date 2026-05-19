@@ -4,7 +4,7 @@ A simple portfolio homepage built for [The Odin Project](https://www.theodinproj
 
 ## Overview
 
-This project is a personal portfolio website designed to showcase projects, skills, and contact information. It was developed as part of The Odin Project curriculum.
+This project is a personal portfolio website designed to showcase projects, skills, and contact information. It was developed as part of The Odin Project curriculum. The website is also designed with a strong focus on accessibility to ensure a great experience for all users.
 
 ## Technologies Used
 
